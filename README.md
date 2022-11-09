@@ -58,7 +58,12 @@ INSERT OVERWRITE LOCAL DIRECTORY '/user/root/survey.csv' ROW FORMAT DELIMITED FI
 
 See ```task03/src/main/java/Task03.java``` to see code.  
 
-Run with:
+Build with:
+```bash
+./gradlew jar
+```
+
+and run with:
 ```bash
 hadoop jar task03-1.0-SNAPSHOT.jar Task03 /user/root/survey.csv /user/root/output
 ```
